@@ -1,0 +1,31 @@
+apply plugin: 'groovy'
+apply plugin: 'maven-publish'
+
+dependencies {
+// https://mvnrepository.com/artifact/org.ow2.asm/asm
+
+    implementation gradleApi() // 导入gradle sdk
+    implementation localGroovy() // 导入groovy sdk
+    implementation 'org.ow2.asm:asm:6.0'
+    implementation 'org.ow2.asm:asm-commons:6.0'
+    implementation "com.android.tools.build:gradle:3.6.4"
+
+    testImplementation 'junit:junit:4.13.2'
+}
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.asm.plugin'
+            artifactId = 'time'
+            version = '1.0.0'
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            // change to point to your repo, e.g. http://my.org/repo
+            url = '../repo'
+        }
+    }
+}

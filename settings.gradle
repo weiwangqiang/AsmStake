@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url uri("./repo") // 声明本地maven地址
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+ext {
+    gradleVersion = '3.6.4'
+}
+rootProject.name = "AsmDemo"
+include ':app'
+include ':plugin'
