@@ -8,7 +8,7 @@ public class TraceBuildConfig {
      * @param fileName fileName
      * @return isNeed
      */
-    public boolean isNeedTraceClass(String fileName) {
+    public static boolean isNeedTraceClass(String fileName) {
         boolean isNeed = true;
         if (fileName.endsWith(".class")) {
             for (String unTraceCls : Constants.UN_TRACE_CLASS) {

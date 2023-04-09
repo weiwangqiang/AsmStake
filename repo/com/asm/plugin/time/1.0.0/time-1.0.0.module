@@ -27,11 +27,11 @@
         {
           "name": "time-1.0.0.jar",
           "url": "time-1.0.0.jar",
-          "size": 30042,
-          "sha512": "69021e3101b2c086c887074b2ca51bce3700ba8bab3b3ce829be7d25864f0594e2de686475e3ddac533618d51b630e5a08416404a15f8468024ec257dd2e78bf",
-          "sha256": "4d511b7f8e9dfcba6b5e3e6c289ecb2a5b1f9acf259a516613093e774d449e56",
-          "sha1": "46564c423c259dbbeca9e818deba54c5ebc832ce",
-          "md5": "da85afc792705f955774a2a366840960"
+          "size": 29995,
+          "sha512": "729b6461d4af7f23bedc5a20a0c09eb52a6887a8dd255abfaa4b96ad15c9cee8657f13b33dedf31f643c88c596877f92f56fd435d2b24b32ab2ac32f8c50ad22",
+          "sha256": "bfaa4c5ac91267d0cb0f0931b3c3f2d19454cca8caea45d89927f7d16d0df3f8",
+          "sha1": "bb0fa95fdc6c3295bc5cf819542e35d7658bd31a",
+          "md5": "b83c595e8b5053a5a7b47bc9c33f11f9"
         }
       ]
     },
@@ -71,11 +71,11 @@
         {
           "name": "time-1.0.0.jar",
           "url": "time-1.0.0.jar",
-          "size": 30042,
-          "sha512": "69021e3101b2c086c887074b2ca51bce3700ba8bab3b3ce829be7d25864f0594e2de686475e3ddac533618d51b630e5a08416404a15f8468024ec257dd2e78bf",
-          "sha256": "4d511b7f8e9dfcba6b5e3e6c289ecb2a5b1f9acf259a516613093e774d449e56",
-          "sha1": "46564c423c259dbbeca9e818deba54c5ebc832ce",
-          "md5": "da85afc792705f955774a2a366840960"
+          "size": 29995,
+          "sha512": "729b6461d4af7f23bedc5a20a0c09eb52a6887a8dd255abfaa4b96ad15c9cee8657f13b33dedf31f643c88c596877f92f56fd435d2b24b32ab2ac32f8c50ad22",
+          "sha256": "bfaa4c5ac91267d0cb0f0931b3c3f2d19454cca8caea45d89927f7d16d0df3f8",
+          "sha1": "bb0fa95fdc6c3295bc5cf819542e35d7658bd31a",
+          "md5": "b83c595e8b5053a5a7b47bc9c33f11f9"
         }
       ]
     }

@@ -6,6 +6,10 @@
   用于将插件发布到本地，指定在项目根路径下的repo文件中
 - app目录：用于测试插件的demo
 
+## 插件发布
+
+在gradle任务中，点击plugin-》task-》publishing-》publish任务即可发布到本地
+
 ## 导入说明
 
 需要在项目根路径下的build.gradle文件中声明
@@ -44,3 +48,7 @@ plugins {
 
 - [使用ASM完成编译时插桩](https://zhuanlan.zhihu.com/p/158758613)
 - [Git项目-TraceFix](https://github.com/Gracker/TraceFix)
+
+## 关于字节码
+
+可以使用 `Jadx class Decompiler` 插件查看字节码

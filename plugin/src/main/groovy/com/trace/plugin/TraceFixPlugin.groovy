@@ -71,7 +71,7 @@ public class TraceFixPlugin extends Transform implements Plugin<Project> {
             input.file.eachFileRecurse { File file ->
                 String name = file.name
                 //需要插桩class 根据自己的需求来------------- 这里判断是否是我们自己写的Application
-                if (isNeedTraceClass(name)) {
+                if (TraceBuildConfig.isNeedTraceClass(name)) {
                     handleFile(file)
                 }
             }
@@ -104,7 +104,7 @@ public class TraceFixPlugin extends Transform implements Plugin<Project> {
                 ZipEntry zipEntry = new ZipEntry(entryName)
                 InputStream inputStream = jarFile.getInputStream(jarEntry)
                 //需要插桩class 根据自己的需求来-------------
-                if (isNeedTraceClass(entryName)) {
+                if (TraceBuildConfig.isNeedTraceClass(entryName)) {
                     //class文件处理
                     println '----------- jar class  <' + entryName + '> -----------'
                     jarOutputStream.putNextEntry(zipEntry)
@@ -130,14 +130,6 @@ public class TraceFixPlugin extends Transform implements Plugin<Project> {
             FileUtils.copyFile(tmpFile, dest)
             tmpFile.delete()
         }
-    }
-
-
-    boolean isNeedTraceClass(String fileName) {
-        if (fileName.endsWith(".class")) {
-            return true
-        }
-        return false
     }
 
     private void handleFile(File file) {
