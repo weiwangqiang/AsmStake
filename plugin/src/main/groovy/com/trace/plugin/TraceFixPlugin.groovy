@@ -146,27 +146,28 @@ public class TraceFixPlugin extends Transform implements Plugin<Project> {
 
     @Override
     public String getName() {
-        return "TraceFixPlugin";
+        return "TraceFixPlugin"
     }
 
     @Override
     public Set<QualifiedContent.ContentType> getInputTypes() {
-        return TransformManager.CONTENT_JARS;
+        return TransformManager.CONTENT_JARS
     }
 
     @Override
     public Set<? super QualifiedContent.Scope> getScopes() {
-        return TransformManager.SCOPE_FULL_PROJECT;
+        return TransformManager.SCOPE_FULL_PROJECT
     }
 
     @Override
     public boolean isIncremental() {
-        return false;
+        // 是否开启增量编译，开启后，第一次编译会生成一个缓存文件，第二次编译时会比较文件的修改时间，只编译修改过的文件
+        return false
     }
 
     @Override
     public void apply(Project project) {
-        project.getExtensions().findByType(AppExtension.class).registerTransform(this);
-        mTraceBuildConfig = new TraceBuildConfig();
+        project.getExtensions().findByType(AppExtension.class).registerTransform(this)
+        mTraceBuildConfig = new TraceBuildConfig()
     }
 }
