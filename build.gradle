@@ -1,13 +1,29 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'maven'
 
 buildscript {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url uri("./repo") // 声明本地maven地址
+        }
+    }
     dependencies {
         // 声明插件的依赖版本
+        classpath 'com.android.tools.build:gradle:3.5.0'
         classpath 'com.asm.plugin:time:1.0.0'
     }
 }
 
-plugins {
-    id 'com.android.application' version '7.3.1' apply false
-    id 'com.android.library' version '7.3.1' apply false
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+ext {
+    gradleVersion = '3.6.4'
 }

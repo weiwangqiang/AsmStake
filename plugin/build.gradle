@@ -1,6 +1,14 @@
 apply plugin: 'groovy'
 apply plugin: 'maven-publish'
 
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
 dependencies {
 // https://mvnrepository.com/artifact/org.ow2.asm/asm
 

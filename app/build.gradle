@@ -4,13 +4,12 @@ plugins {
 }
 
 android {
-    namespace 'com.mts.asmdemo'
-    compileSdk 33
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.mts.asmdemo"
-        minSdk 21
-        targetSdk 32
+        minSdkVersion 21
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
 
